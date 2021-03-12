@@ -35,8 +35,8 @@ function App() {
             <PrivateRoute path="/orders/:id" component={Addorder} />
             <PrivateRoute path="/updateProgress/:id" component={Progress} />
             <PrivateRoute path="/services" component={Services} />
-            {/* <Route path="/404" component={NotFoundView} /> */}
-            {/* <Redirect to="/404" from="*" /> */}
+            <Route path="/404" component={NotFoundView} />
+            <Redirect to="/404" from="*" />
           </DashboardLayout>
         </Switch>
       </Router>
